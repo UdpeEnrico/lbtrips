@@ -54,11 +54,133 @@ header ul li{
 }
 
 header ul li a{
+    width: 100%;
     display: inline-block;
     color: #333;
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
+}
+
+label{
+    margin-left: 20px;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toogle{
+    display: none;
+}
+
+@media only screen and (max-width: 700px){
+    * {
+        font-size: 90%;
+    }
+
+    .section-1 {
+        padding: 50px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    header .logo {
+        max-width: 160px;
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+    header ul {
+        margin-top: 10px;
+    }
+
+    header ul li a {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+    .content .textBox h2 {
+        font-size: 1.5em;
+    }
+
+    .content .textBox h2 span {
+        font-size: 0.6em;
+    }
+
+    .content .textBox p {
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+    }
+
+    .content .textBox a {
+        margin-top: 10px;
+        margin-left: 12.5%;
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+    .content .imgBox {
+        padding-right: 25px;
+        margin-top: 25px;
+    }
+
+    .thumb li {
+        margin: 0 10px;
+    }
+
+    .thumb li img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .sci li a {
+        margin: 16.5px;
+        transform: scale(1);
+    }
+
+    .content .textBox .venda {
+        padding-left: 14.8%;
+    }
+
+    .content .textBox .agenda h3 {
+        padding: 5px;
+        margin-left: 12.5%;
+        font-size: 12px;
+    }
+
+    .content .textBox .wrapper .text-box img {
+        max-width: 160px;
+        margin-right: 25px;
+    }
+
+    .content .textBox .wrapper .text-box h2 {
+        font-size: 21px;
+    }
+
+    .content .textBox .wrapper .text-box p {
+        font-size: 8px;
+    }
+
+    label{
+        display: block;
+        cursor: pointer;
+    }
+    header ul{
+        text-align: center;
+        width: 100%;
+        display: none;
+        position: static;
+    }
+    header ul li a{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
 }
 
 .content{
@@ -90,8 +212,8 @@ header ul li a{
 
 .content .textBox p{
     color: #333;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .content .textBox a{
@@ -201,18 +323,17 @@ header ul li a{
 
 .content .textBox  .wrapper .text-box img{
     width: 100%;
-    max-width: 320px;
     float: left;
     border-radius: 20px;
     margin-right: 50px;
 }
 
 .content .textBox  .wrapper .text-box h2{
-    font-size: 42px;
+    font-size: 1.8em;
     color: #0e86d4;
 }
 
 .content .textBox  .wrapper .text-box p{
-    font-size: 16px;
+    font-size: 1.2em;
     padding-left: 0;
 }
